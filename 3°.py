@@ -10,4 +10,3 @@
 #O programa deverá ao fim imprimir o valor deo imposto devido, o saláriio bruto 
 #e o salário com desconto. O programa ainda deverá se repeTr até que o 
 #usuário deseje encerra-lo
-
