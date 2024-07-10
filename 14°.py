@@ -6,6 +6,5 @@ def verificar_palindromo(palavra):
         return True
     else:
         return False
-resultado = verificar_palindromo("chef")
+resultado = verificar_palindromo(str(input("escolhe a palavra:")))
 print(resultado)
-
