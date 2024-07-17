@@ -10,3 +10,9 @@
 #O programa deverá ao fim imprimir o valor deo imposto devido, o saláriio bruto 
 #e o salário com desconto. O programa ainda deverá se repeTr até que o 
 #usuário deseje encerra-lo
+
+
+salario = int(input("Qual é o sálario?:"))
+
+if salario == 1500 or salario < 1500:
+    imposto = salario % 5
