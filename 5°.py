@@ -14,6 +14,6 @@ while A < B:
     anos += anos + 1
     A = A - porcA
     B = B - porcA
-    print(A)
+    
 
 print("demorou",anos,", o país A tem",A,"habitantes, e o país B tem", B,"de habitantes")
