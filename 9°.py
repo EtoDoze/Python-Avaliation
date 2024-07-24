@@ -28,4 +28,8 @@ else:
 if cpf[-2] == str(primeiro_digito) and cpf[-1] == str(segundo_digito):
      print("CPF válido")
 else:
+<<<<<<< HEAD
      print("CPF inválido")
+=======
+     print("CPF inválido")
+>>>>>>> a880f3e82ec43ac92a4ada39f48afc6d788ec312
