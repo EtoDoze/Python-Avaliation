@@ -5,15 +5,14 @@
 
 A = 5000000
 B = 7000000
-anos = 0
 
-porcA = A % 3
-porcB = B % 2
+A_nat = A * 0.03
+B_nat = B * 0.02
+cont = 0
 
 while A < B:
-    anos += anos + 1
-    A = A - porcA
-    B = B - porcA
-    
+    cont =+ 1
+    A = A - A_nat
+    B = B - B_nat
 
-print("demorou",anos,", o país A tem",A,"habitantes, e o país B tem", B,"de habitantes")
+print(f"A população de A é:{A} e a de B é:{B}")

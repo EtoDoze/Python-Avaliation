@@ -11,30 +11,22 @@
 #e o salário com desconto. O programa ainda deverá se repeTr até que o 
 #usuário deseje encerra-lo
 
+salario = float(input("insira o sálario:"))
 
-def calcular_imposto(salario):
-    if salario <= 1500:
-        aliquota = 0.05
-    elif salario <= 3000:
-        aliquota = 0.08
-    elif salario <= 10000:
-        aliquota = 0.15
-    else:
-        aliquota = 0.27
-
-    imposto_devido = salario * aliquota
-    salario_com_desconto = salario - imposto_devido
-
-    print(f"Salário bruto: R${salario:.2f}")
-    print(f"Imposto devido: R${imposto_devido:.2f}")
-    print(f"Salário com desconto: R${salario_com_desconto:.2f}")
-
-while True:
-    try:
-        salario_funcionario = float(input("Digite o salário do funcionário: R$"))
-        calcular_imposto(salario_funcionario)
-        continuar = input("Deseja calcular para outro funcionário? (S/N): ").strip().lower()
-        if continuar != 's':
-            break
-    except ValueError:
-        print("Valor inválido. Digite um número válido.")
+if salario <= 1500:
+    imposto = salario * 0.05
+    salarioTotal = salario - imposto
+    
+elif salario > 1500 and salario <= 3000:
+    imposto = salario * 0.08
+    salarioTotal = salario - imposto
+    
+elif salario > 3000 and salario <= 10000:
+    imposto = salario * 0.15
+    salarioTotal = salario - imposto
+    
+elif salario > 15000:
+    imposto = salario * 0.27
+    salarioTotal = salario - imposto
+    
+print(f"Seu sálario é:{salario}, o imposto recebido foi de -{imposto} do seu sálario, seu sálario total foi de:{salarioTotal}")

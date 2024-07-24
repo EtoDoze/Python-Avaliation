@@ -4,6 +4,8 @@
 #Calcule o preço total a pagar, sabendo que o carro custa R$90 por dia e
 #R$0,20 por Km rodado.
 
+km_percorridos = float(input("Quantos quilômetros foram percorridos? "))
+dias_aluguel = int(input("Por quantos dias o carro foi alugado? "))
 
 def calcular_preco_aluguel(km_percorridos, dias_aluguel):
     preco_por_dia = 90
@@ -15,11 +17,5 @@ def calcular_preco_aluguel(km_percorridos, dias_aluguel):
     preco_total = custo_dias + custo_km
     return preco_total
 
-try:
-    km_percorridos = float(input("Quantos quilômetros foram percorridos? "))
-    dias_aluguel = int(input("Por quantos dias o carro foi alugado? "))
-
-    preco_total = calcular_preco_aluguel(km_percorridos, dias_aluguel)
-    print(f"Preço total a pagar: R$ {preco_total:.2f}")
-except ValueError:
-    print("Por favor, insira valores numéricos válidos.")
+preco_total = calcular_preco_aluguel(km_percorridos, dias_aluguel)
+print(f"Preço total a pagar: R$ {preco_total:.2f}")
